@@ -18,6 +18,6 @@ songslist = soup.select("li ul li h3")
 list = []
 for song in songslist:
     list.append(song.get_text(strip=True))
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='307f45716c1f40f380ec746866b67e26',
-                                               client_secret='df8ca2a9c87b408f810fb9130482f6f0',
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='',
+                                               client_secret='',
                                                redirect_uri='http://example.com', ))
